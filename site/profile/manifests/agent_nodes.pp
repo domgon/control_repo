@@ -10,4 +10,8 @@ class profile::agent_nodes {
     ensure => present,
     ip     => '172.18.0.3',
   }
+  host {'ns01.myhome.local':
+    ensure => present,
+    ip     => '192.168.50.10',
+  }
 }
